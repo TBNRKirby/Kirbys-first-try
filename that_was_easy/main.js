@@ -1,8 +1,13 @@
 
 function sayThatWasEasy() {
-  
-    $("#easy");
+  var thatWasEasy = new Audio("that_was_easy.mp3");
+  thatWasEasy.play();
+}
 
-var thatWasEasy = new Audio ("that_was_easy.mp3");
-thatWasEasy.play();
+$("#easy").on("click", sayThatWasEasy);
+
+$(document).keypress();
+
+function delegateKeypressevent(event) {
+    
 }
